@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KITEBORD — Ride the Wind</title>
+<title>KITEBOARD — Ride the Wind</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 <template id="__bundler_thumbnail" data-bg-color="#0d1117">
@@ -22,7 +22,7 @@
     <line x1="850" y1="350" x2="850" y2="420" stroke="#1ecfcf" stroke-width="1" stroke-dasharray="5 5" opacity="0.4"/>
     <!-- Title -->
     <text x="180" y="380" font-family="sans-serif" font-weight="900" font-size="180" fill="white" opacity="0.95" letter-spacing="8">KITE</text>
-    <text x="180" y="540" font-family="sans-serif" font-weight="900" font-size="180" fill="#1ecfcf" opacity="0.95" letter-spacing="8">BORD</text>
+    <text x="180" y="540" font-family="sans-serif" font-weight="900" font-size="180" fill="#1ecfcf" opacity="0.95" letter-spacing="8">BOARD</text>
     <!-- Tagline -->
     <text x="182" y="590" font-family="sans-serif" font-size="28" fill="#6b8fa0" letter-spacing="12">RIDE THE WIND</text>
     <!-- Particles -->
@@ -809,6 +809,360 @@
     96% { transform: translateX(2px); opacity: 1; }
     99% { transform: translateX(0); opacity: 0; }
   }
+
+  @media (max-width: 1200px) {
+    nav {
+      padding: 22px 36px;
+    }
+
+    .characters-layout,
+    .sport-inner,
+    .vibe-inner {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    .characters-layout {
+      grid-template-columns: minmax(0, 1fr) 180px minmax(0, 1fr);
+      gap: 0 32px;
+    }
+
+    .char-img-wrap {
+      width: min(30vw, 320px);
+      height: min(46vw, 500px);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    #hero,
+    #cta {
+      min-height: 640px;
+    }
+
+    .kite-svg {
+      top: 96px;
+      right: 40px;
+      width: 220px;
+      height: 220px;
+    }
+
+    .characters-layout {
+      min-height: auto;
+      grid-template-columns: 1fr;
+      gap: 52px;
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+
+    .char-card,
+    .char-card.male,
+    .char-card.female {
+      align-items: center;
+    }
+
+    .char-card.male .char-info,
+    .char-card.female .char-info {
+      text-align: center;
+    }
+
+    .char-card.male .char-stats,
+    .char-stats {
+      justify-content: center;
+    }
+
+    .char-img-wrap {
+      width: min(420px, 72vw);
+      height: min(560px, 88vw);
+    }
+
+    .vs-divider {
+      order: 2;
+      flex-direction: row;
+      gap: 18px;
+    }
+
+    .char-card.female {
+      order: 3;
+    }
+
+    .vs-line {
+      width: min(28vw, 160px);
+      height: 1px;
+      flex: 0 0 auto;
+    }
+
+    .features-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .vibe-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(3, minmax(260px, 34vw));
+    }
+
+    .vibe-cell.tall {
+      grid-row: span 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      position: absolute;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 18px 20px;
+    }
+
+    .nav-links {
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      max-width: 62vw;
+    }
+
+    .nav-links a {
+      font-size: 11px;
+    }
+
+    #hero {
+      height: auto;
+      min-height: 100svh;
+      padding: 128px 20px 96px;
+    }
+
+    .hero-content {
+      width: min(100%, 520px);
+      gap: 16px;
+    }
+
+    .hero-title {
+      font-size: clamp(64px, 22vw, 112px);
+      overflow-wrap: anywhere;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .hero-cta {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      width: 100%;
+      padding: 14px 22px;
+      text-align: center;
+    }
+
+    .kite-svg {
+      top: 110px;
+      right: -34px;
+      width: 170px;
+      height: 170px;
+      opacity: 0.45;
+    }
+
+    .waves {
+      height: 140px;
+    }
+
+    .characters-layout,
+    .sport-inner,
+    .vibe-inner {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .characters-layout {
+      gap: 44px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .char-img-wrap {
+      width: min(340px, 86vw);
+      height: min(460px, 116vw);
+    }
+
+    .char-name {
+      font-size: 42px;
+    }
+
+    .char-stats {
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    #sport,
+    #vibe {
+      padding: 84px 0;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+      padding: 36px 24px;
+    }
+
+    #data-strip {
+      padding: 32px 20px;
+    }
+
+    .data-scroll {
+      gap: 42px;
+    }
+
+    .data-num {
+      font-size: 42px;
+    }
+
+    .data-txt {
+      font-size: 11px;
+    }
+
+    .vibe-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+      margin-top: 40px;
+    }
+
+    .vibe-cell,
+    .vibe-cell.tall {
+      min-height: 280px;
+      grid-row: auto;
+    }
+
+    #vibe > div[style] {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    #vibe > div[style] > .vibe-cell {
+      height: 260px !important;
+    }
+
+    .vibe-badge {
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      width: auto;
+    }
+
+    #vibe > div[style] > .vibe-cell .vibe-badge {
+      left: 16px !important;
+      right: 16px;
+      transform: translateY(4px) !important;
+      white-space: normal !important;
+    }
+
+    #cta {
+      height: auto;
+      min-height: 100svh;
+      padding: 96px 20px;
+    }
+
+    .cta-content {
+      width: min(100%, 520px);
+    }
+
+    .cta-title {
+      font-size: clamp(58px, 18vw, 96px);
+    }
+
+    .cta-sub {
+      margin-bottom: 36px;
+    }
+
+    .cta-content > div[style] {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    footer {
+      padding: 48px 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .nav-links {
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    #hero {
+      padding-top: 156px;
+    }
+
+    .hero-sub,
+    .cta-sub {
+      font-size: 14px;
+    }
+
+    .scroll-hint {
+      bottom: 20px;
+    }
+
+    .char-img-wrap {
+      width: 100%;
+      height: min(420px, 128vw);
+    }
+
+    .char-stats {
+      width: 100%;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .stat {
+      min-width: 72px;
+    }
+
+    .stat-val {
+      font-size: 28px;
+    }
+
+    .feature-num {
+      font-size: 58px;
+    }
+
+    .feature-title {
+      font-size: 24px;
+    }
+
+    .vibe-cell,
+    .vibe-cell.tall {
+      min-height: 230px;
+    }
+
+    #vibe > div[style] > .vibe-cell {
+      height: 230px !important;
+    }
+
+    .cta-line-bar {
+      width: 52px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -818,7 +1172,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">KITE<span>BORD</span></div>
+  <div class="nav-logo">KITE<span>BOARD</span></div>
   <div class="nav-links">
     <a href="#characters">RIDERS</a>
     <a href="#sport">SPORT</a>
@@ -867,8 +1221,8 @@
 
   <div class="hero-content">
     <div class="hero-eyebrow">— Wind. Water. Freedom. —</div>
-    <h1 class="hero-title glitch" data-text="KITEBORD">KITEBORD</h1>
-    <p class="hero-sub">風と波に乗り、空へ飛び立て。<br>Kitebordが拓く、新しい自由の世界へ。</p>
+    <h1 class="hero-title glitch" data-text="KITEBOARD">KITEBOARD</h1>
+    <p class="hero-sub">風と波に乗り、空へ飛び立て。<br>Kiteboardが拓く、新しい自由の世界へ。</p>
     <div class="hero-cta">
       <a href="#characters" class="btn-primary">MEET THE RIDERS</a>
       <a href="#sport" class="btn-ghost">LEARN MORE</a>
@@ -1127,7 +1481,7 @@
       <div class="cta-line-bar r"></div>
     </div>
     <h2 class="cta-title">START YOUR<br><em>JOURNEY</em><br>TODAY</h2>
-    <p class="cta-sub">風を掴み、波を超え、空へ——。<br>Kitebordの世界へようこそ。</p>
+    <p class="cta-sub">風を掴み、波を超え、空へ——。<br>Kiteboardの世界へようこそ。</p>
     <div style="display:flex; gap:16px; justify-content:center;">
       <a href="#" class="btn-primary">体験セッション予約</a>
       <a href="#" class="btn-ghost">スクール情報</a>
@@ -1137,8 +1491,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">KITE<span>BORD</span></div>
-  <div class="footer-copy">© 2026 KITEBORD. All rights reserved.</div>
+  <div class="footer-logo">KITE<span>BOARD</span></div>
+  <div class="footer-copy">© 2026 KITEBOARD. All rights reserved.</div>
 </footer>
 
 <script>
